@@ -103,8 +103,11 @@ function mousePressed() {
 //--------------------------------space bar
 function keyPressed() {
    if (keyCode === 32 ) {
+    reloadPage(); 
     let fs = fullscreen();
     fullscreen(!fs);
   }
 }
-
+function reloadPage() {
+   window.location.reload();
+}
